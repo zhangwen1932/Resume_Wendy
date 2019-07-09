@@ -1,14 +1,3 @@
-/*******************************************
-3ColorResume
-Author: office@kamsolutions.pl
-*******************************************/
-/*******************************************
-FONTS
-*******************************************/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-/*******************************************
-SETTINGS
-*******************************************/
 @charset "utf-8";
 @-webkit-viewport   { width: device-width; }
 @-moz-viewport      { width: device-width; }
@@ -21,9 +10,17 @@ BODY
 body{
   font-family: 'Open Sans', Arial, Tahoma;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 10px;
   color: #363636;
   background: #ededed;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }
 /*******************************************
 CONTAINER
@@ -76,10 +73,11 @@ PHOTO (AVATAR)
 #text-header:after{
   width: 100%;
   height: 3px;
-  background: url(../img/line.png);
+  /* background: url(../img/line.png); */
   margin-top: 15px;
   content: '';
   display: block;
+  border: 2px solid #eee;
 }
 /*******************************************
 DEFAULT BOX
@@ -135,6 +133,7 @@ EDUCATION
 }
 #education .year{
   width: 10%;
+  height: 40px;
   background: #fff;
   padding: 10px;
   font-size: 1.5em;
@@ -203,29 +202,27 @@ CONTACT
   width: 100%;
   float: left;
 }
-.contact-item .icon{
+.contact-item .row .iconfont{
   padding: 10px;
   border-right: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   opacity: 0.2;
+  font-size: 2rem;
 }
-.contact-item:last-child .icon{
+.contact-item:last-child .iconfont{
   border-bottom: none;
 }
-.contact-item .fa{
-  font-size: 2em;
-}
-.contact-item .title{
+.contact-item .row .title{
   width: 80%;
   width: calc(100% - 55px);
   font-size: 1.5em;
   font-weight: 700;
   opacity: 0.9;
 }
-.contact-item .title.only{
+.contact-item .row .title.only{
   margin-top: 10px;
 }
-.contact-item .description{
+.contact-item .row .description{
   width: 80%;
   width: calc(100% - 55px);
   font-size: 1.2em;
@@ -311,7 +308,7 @@ LANGUAGES
 /*******************************************
 HOBBIES
 *******************************************/
-.hobby{
+.hobby-item{
   color: #fff;
   display: inline-block;
   margin-right: 5px;
@@ -321,7 +318,7 @@ HOBBIES
   position: relative;
   font-size: 1.2em;
 }
-.hobby:before{
+.hobby-item:before{
   content: "\f004";
   font-family: FontAwesome;
   font-style: normal;

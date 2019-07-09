@@ -1,5 +1,5 @@
 var callback = function () {
-  $('.item-skills').each(function () {
+  $('.skill-item').each(function () {
     newWidth = $(this).parent().width() * $(this).data('percent');
     $(this).width(0);
     $(this).animate({
