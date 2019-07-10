@@ -1,0 +1,24 @@
+#text-header h1 span {
+  color: #ff4081;
+  transition: color 1s ease;
+}
+
+.box h2{
+  color: #ff4081;
+  transition: background-color 1s ease;
+}
+
+#education:before {
+  background: linear-gradient(to bottom, #ffffff 0%,#ff4081 7%,#ff4081 89%,#ffffff 100%);
+  transition: background-color 1s ease;
+}
+
+.skill-item {
+  background: #ff4081;
+  transition: background-color 1s ease;
+}
+
+.hobby-item {
+  background: #ff4081;
+  transition: background-color 1s ease;
+}
