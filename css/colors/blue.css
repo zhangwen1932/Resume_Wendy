@@ -1,0 +1,19 @@
+#text-header h1 span {
+    color: #016cff;
+}
+
+.box h2{
+  color: #016cff;
+}
+
+#education:before {
+  background: linear-gradient(to bottom, #ffffff 0%,#016cff 7%,#016cff 89%,#ffffff 100%);
+}
+
+.skill-item {
+  background: #016cff;
+}
+
+.hobby-item {
+  background: #016cff;
+}
