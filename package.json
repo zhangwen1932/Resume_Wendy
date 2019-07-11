@@ -1,0 +1,25 @@
+{
+  "name": "resume_wendy",
+  "version": "1.0.0",
+  "description": "个人简历",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --progress --port 2019 --hot --config webpack/webpack.dev.config.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangwen1932/Resume_Wendy.git"
+  },
+  "author": "Wendy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangwen1932/Resume_Wendy/issues"
+  },
+  "homepage": "https://github.com/zhangwen1932/Resume_Wendy#readme",
+  "devDependencies": {
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}

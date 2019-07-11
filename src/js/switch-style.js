@@ -7,7 +7,8 @@
     switch_style_click: function () {
       $(".color").click(function (e) {
         var id = $(this).attr("id");
-        $("#switch-style").attr("href", "/Resume_Wendy/css/colors/" + id + ".css");
+        // $("#switch-style").attr("href", "/Resume_Wendy/css/colors/" + id + ".css");
+        $("#switch-style").attr("href", "src/css/colors/" + id + ".css");
         $('.switch-style').removeClass('active');
         e.preventDefault();
       });
