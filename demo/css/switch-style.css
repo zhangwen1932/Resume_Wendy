@@ -1,0 +1,79 @@
+.switch-style {
+  background: #fff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px 18px;
+  position: fixed;
+  z-index: 100;
+  top: 150px;
+  right: -205px;
+  width: 205px;
+  transition: right 0.3s ease-in-out;
+}
+
+.switch-style .switch-style-toggle {
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  box-shadow: -9px 5px 20px 0 rgba(0, 0, 0, 0.07);
+  position: absolute;
+  top: 30px;
+  right: 205px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.switch-style .switch-style-toggle span {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.switch-style.active{
+  right: 0;
+}
+.switch-style h4{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.switch-style ul{
+  margin-left: 0;
+}
+.list-unstyled{
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    /* padding-right: 5px; */
+}
+.switch-style ul > li {
+    padding-right: 4px;
+    padding-left: 0;
+}
+.switch-style ul > li > a {
+    border-radius: 2px;
+    display: block;
+    width: 35px;
+    height: 30px;
+}
+.switch-style ul > li > a.blue {
+    background: #016cff;
+}
+.switch-style ul > li > a.orange {
+    background: #ff4f00;
+}
+.switch-style ul > li > a.pink {
+    background: #ff4081;
+}
+.switch-style ul > li > a.green {
+    background: #53d769;
+}
