@@ -4,8 +4,11 @@
   "description": "个人简历",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --progress --port 2019 --hot --config webpack/webpack.dev.config.js --open"
+    "clean": "rm -rf dist/",
+    "build": "webpack --config --watch webpack/webpack.dev.config.js",
+    "dev": "webpack-dev-server --progress --port 2019 --hot --config webpack/webpack.dev.config.js --open",
+    "deploy": "npm run clean && NODE_ENV=production webpack -p --progress --display-error-details --config webpack/webpack.deploy.config.js && npm run release",
+    "release": "scp -r dist/static deploy@39.98.92.83:~/public/ && scp -r dist/static deploy@172.104.107.24:~/"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,10 @@
   },
   "homepage": "https://github.com/zhangwen1932/Resume_Wendy#readme",
   "devDependencies": {
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
