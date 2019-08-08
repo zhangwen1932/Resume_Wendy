@@ -13,7 +13,14 @@ var callback = function () {
     }, 2000);
   });
 };
-$(document).ready(callback);
+$(document).ready(function() {
+  $('#status').fadeOut();
+  $('#preloader').delay(350).fadeOut('slow');
+  $('body').delay(350).css({
+    'overflow': 'visible'
+  });
+  callback();
+});
 
 var resize;
 window.onresize = function () {
