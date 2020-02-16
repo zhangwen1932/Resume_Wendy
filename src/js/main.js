@@ -15,10 +15,10 @@ const callback = () => {
 };
 $(document).ready(() => {
   $('#status').fadeOut();
-  $('#preloader').delay(350).fadeOut('slow');
-  $('body').delay(350).css({
-    'overflow': 'visible'
-  });
+  // $('#preloader').delay(350).fadeOut('slow');
+  // $('body').delay(350).css({
+  //   'overflow': 'visible'
+  // });
   callback();
   $.ajax({
     method: "GET",
@@ -26,6 +26,7 @@ $(document).ready(() => {
     cache: false,
     dataType: "text"
   }).done((data)=>{
+    $('#preloader').remove();
     const info = $.parseJSON(data);
     if(info.success){
       const userInfo = info.data;
