@@ -33,43 +33,43 @@
         "platform": "weibo",
         "imgUrl": "",
         "nickname": "墙头马",
-        "url": "https://www.weibo.com/zhangwen1932/home"
+        "content": "https://www.weibo.com/zhangwen1932/home"
       },
       {
         "platform": "github",
         "imgUrl": "",
         "nickname": "zhangwen1932",
-        "url": "https://github.com/zhangwen1932"
+        "content": "https://github.com/zhangwen1932"
       },
       {
         "platform": "phone",
         "imgUrl": "",
         "nickname": "13817848060",
-        "url": false
+        "content": "欢迎跟我联系"
       },
       {
         "platform": "address",
         "imgUrl": "",
         "nickname": "浙江省杭州市",
-        "url": false
+        "content": "定居杭州"
       }
     ],
     "skill":[
       {
         "name": "HTML",
-        "percent": 90
+        "percent": 1.00
       },
       {
         "name": "CSS",
-        "percent": 80
+        "percent": 0.9
       },
       {
         "nmae": "JQuery",
-        "percent": 70
+        "percent": 0.7
       },
       {
         "name": "React",
-        "percent": 50
+        "percent": 0.5
       }
     ],
     "hobbies":[
