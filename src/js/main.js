@@ -14,7 +14,7 @@ const callback = () => {
   });
 };
 $(document).ready(() => {
-  $('#status').fadeOut();
+  // $('#status').fadeOut();
   // $('#preloader').delay(350).fadeOut('slow');
   // $('body').delay(350).css({
   //   'overflow': 'visible'
