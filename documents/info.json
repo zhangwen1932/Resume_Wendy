@@ -49,7 +49,7 @@
         "content": "定居杭州"
       }
     ],
-    "skill":[
+    "skill": [
       {
         "name": "HTML",
         "percent": 1.00
@@ -67,7 +67,7 @@
         "percent": 0.5
       }
     ],
-    "hobbies":[
+    "hobbies": [
       {
         "name": "Photography",
         "icon": ""
