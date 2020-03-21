@@ -22,7 +22,7 @@ $(document).ready(() => {
   callback();
   $.ajax({
     method: "GET",
-    url: "./src/documents/info.json",
+    url: "documents/info.json",
     cache: false,
     dataType: "text"
   }).done((data)=>{
