@@ -77,3 +77,8 @@
 .switch-style ul > li > a.green {
     background: #53d769;
 }
+
+.iconfont{
+  font-size: 26px;
+  color: #444;
+}
