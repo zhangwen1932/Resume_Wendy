@@ -45,7 +45,7 @@ $(document).ready(() => {
               <div class="year pull-left">${item.time}</div>
               <div class="description pull-right">
                 <h3>${item.school}</h3>
-                <p>${item.content}/p>
+                <p>${item.content}</p>
               </div>
             </div>
           </li>`
