@@ -30,7 +30,6 @@ $(document).ready(() => {
     const info = $.parseJSON(data);
     if(info.success){
       const userInfo = info.data;
-      console.log('userInfo', userInfo);
       // 渲染about板块
       const about = userInfo.about;
       $('#about').html(about);
