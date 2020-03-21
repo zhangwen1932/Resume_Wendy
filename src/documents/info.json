@@ -26,25 +26,25 @@
     "contact": [
       {
         "platform": "weibo",
-        "imgUrl": "icon-icon-test1",
+        "icon": "iconsina",
         "nickname": "墙头马",
         "content": "https://www.weibo.com/zhangwen1932/home"
       },
       {
         "platform": "github",
-        "imgUrl": "icon-icon-test3",
+        "icon": "icongithub",
         "nickname": "zhangwen1932",
         "content": "https://github.com/zhangwen1932"
       },
       {
         "platform": "phone",
-        "imgUrl": "icon-dianhua_moren",
+        "icon": "iconphone1",
         "nickname": "13817848060",
         "content": "欢迎跟我联系"
       },
       {
         "platform": "address",
-        "imgUrl": "icon-dizhi",
+        "icon": "iconaddress",
         "nickname": "浙江省杭州市",
         "content": "定居杭州"
       }

@@ -86,7 +86,7 @@ $(document).ready(() => {
             <div class="row">
               <div class="col-2">
                 <div class="icon pull-left text-center">
-                  <span class="iconfont ${item.imgUrl}"></span>
+                  <i class="iconfont ${item.icon}"></i>
                 </div>
               </div>
               <div class="col-10">
