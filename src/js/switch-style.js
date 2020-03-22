@@ -7,7 +7,7 @@ $(document).ready(function () {
   });
   $(".color").click(function(e){
     var id = $(this).attr("id");
-    $('#switch-style').attr("href", "src/css/colors/" + id + ".css");
+    $('#switch-style').attr("href", "css/colors/" + id + ".css");
     $switchStyle.removeClass('active');
     e.preventDefault();
   })
