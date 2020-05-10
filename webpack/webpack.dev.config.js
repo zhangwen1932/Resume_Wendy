@@ -21,13 +21,30 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }, 
-      {
+        test: /\.(le|c)ss$/,
+        use: ['style-loader', 'css-loader', {
+          loader: 'postcss-loader',
+          options: {
+            plugins: function () {
+              return [
+                require('autoprefixer')({
+                  "overrideBrowserslist": [
+                    ">0.25%",
+                    "not dead"
+                  ]
+                })
+              ]
+            }
+          }
+        }, {
+          loader: 'less-loader',
+          options: {
+            "modifyVars": {},
+            javascriptEnabled: true,
+          }
+        }],
+        exclude: /node_modules/
+      }, {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
